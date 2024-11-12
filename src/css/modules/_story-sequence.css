@@ -1,0 +1,19 @@
+.story-sequence {
+  max-width: 750px; /* modifier */
+  margin-inline: auto;
+  border: 3px solid red;
+}
+
+.images-group {
+  position: relative;
+}
+
+.images-group-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-butterfly {
+  transform: translateX(-350px) translateY(-250) scale(50%);
+}
