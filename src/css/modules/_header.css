@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/img/arbre-welcomescreen-1.png),
+    url(/img/arbre-welcomescreen-2.png);
+  background-position: left top, right top;
+  background-size: 30%, 30%;
+  background-repeat: no-repeat;
+}
