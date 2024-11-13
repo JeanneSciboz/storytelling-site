@@ -1,7 +1,8 @@
 .story-sequence {
   max-width: 750px; /* modifier */
   margin-inline: auto;
-  border: 3px solid red;
+  /* border: 3px solid red */
+  padding-bottom: 230px;
 }
 
 .images-group {
@@ -14,6 +15,35 @@
   left: 0;
 }
 
+.images-group-over-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .image-butterfly {
   transform: translateX(-350px) translateY(-250) scale(50%);
+}
+
+.images-temple {
+  transform: translateX(200px) translateY(100px) scale(80%);
+}
+
+.images-graveyard {
+  transform: translateX(-100px) translateY(10px) scale(100%);
+}
+
+.images-man {
+  transform: translateX(200px) translateY(10px) scale(100%);
+}
+
+p {
+  padding-bottom: 64px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.text-question {
+  text-align: right;
+  padding-top: 148;
 }
