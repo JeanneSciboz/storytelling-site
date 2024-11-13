@@ -1,0 +1,5 @@
+.scroll-horizontal {
+  width: 100%; /* ou une largeur spécifique */
+  overflow-x: auto;
+  white-space: nowrap; /* Pour empêcher le retour à la ligne */
+}
