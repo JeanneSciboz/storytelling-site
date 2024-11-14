@@ -2,7 +2,7 @@ body {
   background-image: url(/img/arbre-welcomescreen-1.png),
     url(/img/arbre-welcomescreen-2.png);
   background-position: left top, right top;
-  background-size: 20%, 20%;
+  background-size: 25%, 25%;
   background-repeat: no-repeat;
   padding-top: 50px;
 }
