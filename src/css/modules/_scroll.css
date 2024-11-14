@@ -1,5 +1,5 @@
 .scroll-horizontal {
-  width: 7996px; /* ou une largeur spécifique */
+  width: 6542px; /* ou une largeur spécifique */
   height: 100vh;
   background-color: red;
   white-space: nowrap; /* Pour empêcher le retour à la ligne */
@@ -32,7 +32,7 @@
 }
 
 .image-3 {
-  width: 12%;
+  width: 15%;
   top: 0;
   left: 1366px;
   z-index: 1;
