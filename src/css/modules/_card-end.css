@@ -1,0 +1,10 @@
+.card-end {
+  height: 100vh;
+  padding: 117px 247px 0 247px;
+}
+
+.image-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

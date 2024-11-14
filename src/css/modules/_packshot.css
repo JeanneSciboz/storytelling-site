@@ -1,0 +1,22 @@
+footer {
+  background-image: url(/img/arbre-end-1.png), url(/img/arbre-end-2.png);
+  background-position: left bottom, right top;
+  background-size: 25%, 25%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+
+.packshot {
+  height: 100vh;
+}
+
+.mockup-livre {
+  height: 70%;
+}
+
+.text-end {
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 636px;
+  padding-right: 346px;
+}
