@@ -26,49 +26,77 @@
 }
 
 .image-2 {
-  height: 45%;
-  top: 240px;
+  height: 50%;
+  top: 210px;
   z-index: 1;
 }
 
 .image-3 {
-  width: 11%;
+  width: 12%;
   top: 0;
-  left: 1100;
+  left: 1366px;
   z-index: 1;
 }
 
 .image-4 {
-  height: 45%;
-  top: 240px;
-  left: 1666px;
+  height: 50%;
+  top: 210px;
+  left: 1939px;
   z-index: 0;
 }
 
 .image-5 {
-  height: 60%;
-  top: 221px;
-  left: 2411px;
+  height: 62%;
+  top: 191px;
+  left: 2782px;
   z-index: 2;
 }
 
 .image-6 {
-  height: 45%;
-  top: 240px;
-  left: 2822px;
+  height: 50%;
+  top: 210px;
+  left: 3175px;
   z-index: 0;
 }
 
 .image-7 {
-  height: 60%;
-  bottom: 199px;
-  left: 3508px;
+  height: 76%;
+  bottom: 187px;
+  left: 3934px;
   z-index: 2;
 }
 
 .image-8 {
-  height: 45%;
-  top: 240px;
-  left: 3675px;
+  height: 50%;
+  top: 210px;
+  left: 4163px;
   z-index: 0;
+}
+
+.image-9 {
+  height: 50%;
+  top: 210px;
+  z-index: 1;
+  left: 4530px;
+}
+
+.image-10 {
+  height: 70%;
+  left: 5264px;
+  z-index: 2;
+  bottom: 116px;
+}
+
+.image-11 {
+  height: 50%;
+  top: 210px;
+  z-index: 1;
+  left: 5528px;
+}
+
+.image-12 {
+  height: 81%;
+  left: 5957px;
+  z-index: 2;
+  bottom: 116px;
 }
