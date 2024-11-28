@@ -17,6 +17,7 @@ function appearLeft(element) {
 }
 
 appearLeft(".image-butterfly");
+appearLeft(".image-graveyard");
 // répéter pour toutes les images
 
 function paralax(element) {
@@ -30,6 +31,7 @@ function paralax(element) {
 }
 
 paralax(".image-butterfly");
+paralax(".image-graveyard");
 // répéter pour toutes les images
 
 gsap.to(".scroll-wrapper", {
@@ -39,13 +41,15 @@ gsap.to(".scroll-wrapper", {
     anticipatePin: 1,
     scrub: true,
     // end: () => `+=${scrollHorizontalWidth - windowWidth}`,
-    end: "+=7000",
+    end: () => `+=${scrollHorizontalWidth - windowWidth}`,
   },
-  //   x: windowWidth - scrollHorizontalWidth,
-  x: "-700%",
+
+  //   x: windowWidth - "6542px",
+  //   x: "-700%",
+  x: "-6542px",
   ease: "none",
 });
 
 const windowWidth = window.screen.width;
 const scrollHorizontalWidth =
-  document.querySelector(".slider-element").offsetWidth;
+  document.querySelector(".scroll-horizontal").offsetWidth;
