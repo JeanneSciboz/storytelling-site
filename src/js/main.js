@@ -30,3 +30,22 @@ function paralax(element) {
 }
 
 paralax(".image-butterfly");
+// répéter pour toutes les images
+
+gsap.to(".scroll-wrapper", {
+  scrollTrigger: {
+    trigger: ".scroll-mask",
+    pin: true,
+    anticipatePin: 1,
+    scrub: true,
+    // end: () => `+=${scrollHorizontalWidth - windowWidth}`,
+    end: "+=7000",
+  },
+  //   x: windowWidth - scrollHorizontalWidth,
+  x: "-700%",
+  ease: "none",
+});
+
+const windowWidth = window.screen.width;
+const scrollHorizontalWidth =
+  document.querySelector(".slider-element").offsetWidth;
