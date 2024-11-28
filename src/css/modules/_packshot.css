@@ -1,13 +1,18 @@
 footer {
+  display: inline-flex;
+  overflow: auto;
+  height: 100vh;
+}
+
+.packshot {
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
   background-image: url(/img/arbre-end-1.png), url(/img/arbre-end-2.png);
   background-position: left bottom, right top;
   background-size: 25%, 25%;
   background-repeat: no-repeat;
   padding-top: 50px;
-}
-
-.packshot {
-  height: 100vh;
 }
 
 .mockup-livre {

@@ -1,10 +1,22 @@
 .card-end {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments de haut en bas */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
   height: 100vh;
+  width: 1440px;
+  flex-shrink: 0;
   padding: 117px 247px 0 247px;
 }
 
 .image-end {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center; /* Centre le contenu dans .image-end */
+  height: 703px;
+}
+
+.card-text-end {
+  font-size: 50px;
+  text-align: center;
 }
