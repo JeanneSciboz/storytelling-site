@@ -34,22 +34,22 @@ paralax(".image-butterfly");
 paralax(".image-graveyard");
 // répéter pour toutes les images
 
-gsap.to(".scroll-wrapper", {
-  scrollTrigger: {
-    trigger: ".scroll-mask",
-    pin: true,
-    anticipatePin: 1,
-    scrub: true,
-    // end: () => `+=${scrollHorizontalWidth - windowWidth}`,
-    end: () => `+=${scrollHorizontalWidth - windowWidth}`,
-  },
+// gsap.to(".scroll-wrapper", {
+//   scrollTrigger: {
+//     trigger: ".scroll-mask",
+//     pin: true,
+//     anticipatePin: 1,
+//     scrub: true,
+//     // end: () => `+=${scrollHorizontalWidth - windowWidth}`,
+//     end: () => `+=${scrollHorizontalWidth - windowWidth}`,
+//   },
 
-  //   x: windowWidth - "6542px",
-  //   x: "-700%",
-  x: "-6542px",
-  ease: "none",
-});
+//   //   x: windowWidth - "6542px",
+//   //   x: "-700%",
+//   x: "-6542px",
+//   ease: "none",
+// });
 
-const windowWidth = window.screen.width;
-const scrollHorizontalWidth =
-  document.querySelector(".scroll-horizontal").offsetWidth;
+// const windowWidth = window.screen.width;
+// const scrollHorizontalWidth =
+//   document.querySelector(".scroll-horizontal").offsetWidth;
