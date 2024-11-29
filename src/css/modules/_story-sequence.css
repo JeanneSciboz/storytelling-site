@@ -1,7 +1,7 @@
+/* Section des images et leurs positionnement.*/
 .story-sequence {
-  max-width: 750px; /* modifier */
+  max-width: 750px;
   margin-inline: auto;
-  /* border: 3px solid red */
   padding-bottom: 300px;
 }
 

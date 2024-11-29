@@ -1,5 +1,6 @@
+/* Section de la fin du site. */
 .card-end {
-  width: 100%; /* 100% */
+  width: 100%;
   flex-shrink: 0;
   padding-top: 100px;
 }
@@ -17,5 +18,5 @@
 }
 
 .scroll-horizontal-end {
-  height: 100vh; /* Hauteur visible (ajustez selon vos besoins) */
+  height: 100vh; /* Hauteur visible */
 }

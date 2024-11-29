@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-//Fonction pour faire venir les images de gauche au centre avec un opacité.
+//Fonction pour faire venir les images de gauche au centre avec un opacité de 0 à 100%.
 gsap.registerPlugin(ScrollTrigger);
 
 function appearLeft(element) {
@@ -28,8 +28,7 @@ appearLeft(".image-ground-hand");
 appearLeft(".images-man-back");
 appearLeft(".images-man-ground");
 
-//Fonction pour faire venir les images de la droite au centre avec un opacité.
-
+//Fonction pour faire venir les images de la droite au centre avec un opacité de 0 à 100%.
 function appearRight(element) {
   gsap.from(element, {
     scrollTrigger: {
@@ -44,7 +43,7 @@ function appearRight(element) {
   });
 }
 
-//dessou les images qui arrivent de la droite.
+//les images qui arrivent de la droite.
 appearRight(".image-sky");
 appearRight(".image-temple");
 appearRight(".image-forest");
@@ -54,7 +53,6 @@ appearRight(".image-hands");
 appearRight(".image-man");
 
 //Fonction pour ajouter un paralaxe sur les images.
-
 function paralax(element) {
   gsap.to(element, {
     yPercent: 15,
@@ -65,45 +63,14 @@ function paralax(element) {
   });
 }
 
+// Les images qui on besoin d'un paralax
 paralax(".image-butterfly");
 paralax(".image-graveyard");
 paralax(".image-temple");
 paralax(".image-man");
 paralax(".image-hands");
-// répéter pour toutes les images
 
-// gsap.to(".scroll-wrapper", {
-//   scrollTrigger: {
-//     trigger: ".scroll-mask",
-//     pin: true,
-//     anticipatePin: 1,
-//     scrub: true,
-//     // end: () => `+=${scrollHorizontalWidth - windowWidth}`,
-//     end: () => `+=${scrollHorizontalWidth - windowWidth}`,
-//   },
-
-//   //   x: windowWidth - "6542px",
-//   //   x: "-700%",
-//   x: "-6542px",
-//   ease: "none",
-// });
-
-// const windowWidth = window.screen.width;
-// const scrollHorizontalWidth =
-//   document.querySelector(".scroll-horizontal").offsetWidth;
-
-// const scrollMask = document.querySelector(".scroll-mask");
-// const scrollWrapper = document.querySelector(".scroll-wrapper");
-
-// // Ajoute un événement de défilement
-// scrollMask.addEventListener("wheel", (e) => {
-//   e.preventDefault(); // Empêche le comportement par défaut (scroll vertical)
-
-//   // Calcule le défilement horizontal
-//   const scrollAmount = e.deltaY; // Utilise le défilement vertical pour le transformer en horizontal
-//   scrollMask.scrollLeft += scrollAmount; // Déplace horizontalement
-// });
-
+// js pour faire fonctionner le scroll horizontale
 let scrollingImage = document.querySelector(".scroll-horizontal"); // Sélectionnez l'élément
 let hauteurElement = window.innerHeight; // Largeur de l'élément en pixels
 let largeurPage = window.innerWidth; // Largeur actuelle de la fenêtre

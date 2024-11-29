@@ -18,3 +18,7 @@ video {
 html {
   scroll-behavior: smooth;
 }
+
+main {
+  padding: 250px;
+}

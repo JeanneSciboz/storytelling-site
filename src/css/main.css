@@ -1,7 +1,5 @@
-@import "./_font.css";
 @import "./_base.css";
 @import "./_layout.css";
-@import "./modules/_example.css";
 @import "./modules/_button.css";
 @import "./modules/_header.css";
 @import "./modules/_story-sequence.css";

@@ -1,8 +1,8 @@
+/* boutton qui permet de descendre au niveaux du main */
 .button {
   border: 1px solid #000;
   border-radius: 62px;
   background: rgba(255, 255, 255, 0.3);
-  /* padding: 10px 30px; */
   width: 74px;
   height: 176px;
   display: flex;
@@ -25,6 +25,7 @@
   bottom: 110px;
 }
 
+/* boutton qui revoit sur le site de la fnac */
 .button-end {
   display: flex;
   padding: 10px 30px;

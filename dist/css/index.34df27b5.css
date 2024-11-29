@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding: 250px;
+}
+
 body {
   background-image: url("../img/arbre-welcomescreen-1.54e22ec7.png"), url("../img/arbre-welcomescreen-2.72efb66b.png");
   background-position: 0 0, 100% 0;
@@ -72,10 +76,6 @@ h3 {
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-}
-
-main {
-  padding: 250px;
 }
 
 .button {
