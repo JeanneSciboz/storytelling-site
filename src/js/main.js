@@ -92,19 +92,40 @@ paralax(".image-hands");
 // const scrollHorizontalWidth =
 //   document.querySelector(".scroll-horizontal").offsetWidth;
 
-const scrollMask = document.querySelector(".scroll-mask");
-const scrollWrapper = document.querySelector(".scroll-wrapper");
+// const scrollMask = document.querySelector(".scroll-mask");
+// const scrollWrapper = document.querySelector(".scroll-wrapper");
 
-// Ajoute un événement de défilement
-scrollMask.addEventListener("wheel", (e) => {
-  e.preventDefault(); // Empêche le comportement par défaut (scroll vertical)
+// // Ajoute un événement de défilement
+// scrollMask.addEventListener("wheel", (e) => {
+//   e.preventDefault(); // Empêche le comportement par défaut (scroll vertical)
 
-  // Calcule le défilement horizontal
-  const scrollAmount = e.deltaY; // Utilise le défilement vertical pour le transformer en horizontal
-  scrollMask.scrollLeft += scrollAmount; // Déplace horizontalement
+//   // Calcule le défilement horizontal
+//   const scrollAmount = e.deltaY; // Utilise le défilement vertical pour le transformer en horizontal
+//   scrollMask.scrollLeft += scrollAmount; // Déplace horizontalement
+// });
+
+let scrollingImage = document.querySelector(".scroll-horizontal"); // Sélectionnez l'élément
+let hauteurElement = window.innerHeight; // Largeur de l'élément en pixels
+let largeurPage = window.innerWidth; // Largeur actuelle de la fenêtre
+let longeurScrolling = (7.80859375 * hauteurElement - largeurPage) * -1;
+// calcule : ratio de l'image * la hauter de la page (également celle de l'image
+// car elle fait 100vh de haut) -la largeur de la page carr c'est la partie
+// affichée de base. Tout ça * -1 pour un resultat negatif
+
+gsap.to(scrollingImage, {
+  scrollTrigger: {
+    trigger: ".scroll-mask",
+    pin: true,
+    anticipatePin: 1,
+    scrub: true,
+    end: "+=3000",
+    markers: false,
+  },
+  x: longeurScrolling,
+  ease: "none",
 });
 
-//Fonction pour faire apparetre les textes de opacité 0 à 100%
+//Fonction pour faire apparetre les textes de opacité 0 à 100% et un léger scale.
 gsap.registerPlugin(ScrollTrigger);
 
 // Sélectionne tous les éléments ayant la classe "texte-animate"

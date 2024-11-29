@@ -138,21 +138,22 @@
 } */
 
 .scroll-mask {
-  width: 100%; /* Largeur visible */
+  width: 99svw; /* Largeur visible */
   height: 100vh; /* Hauteur visible (ajustez selon vos besoins) */
-  overflow: hidden; /* Masque les parties débordantes */
   position: relative;
 }
 
 .scroll-wrapper {
   display: flex; /* Permet au contenu de défiler horizontalement */
   height: 100%;
-  white-space: nowrap; /* Empêche le contenu de revenir à la ligne */
+  overflow: hidden; /* Masque les parties débordantes */
+  position: relative;
+  left: -250px;
 }
 
 .scroll-horizontal {
-  height: 100%;
   max-width: none; /* Permet à l'image de dépasser les limites */
+  position: absolute;
   display: block;
   height: 100vh;
 }

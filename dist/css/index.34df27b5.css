@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../img/arbre-welcomescreen-1.54e22ec7.png"), url("../img/arbre-welcomescreen-2.72efb66b.png");
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 30%, 25%;
+  padding-top: 50px;
+}
+
+p {
+  font-family: Teachers;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 100px;
+  font-family: Fleur;
+  font-size: 179px;
+  font-weight: 700;
+  position: relative;
+}
+
+h1 .under-title {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: -100px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 100px;
+  font-family: Fleur;
+  font-size: 150px;
+  font-weight: 700;
+  position: relative;
+}
+
+h2 .under-title {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: -100px;
+}
+
+h3 {
+  color: #000;
+  text-align: center;
+  font-family: Teachers;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main {
+  padding: 250px;
+}
+
+.button {
+  background: #ffffff4d;
+  border: 1px solid #000;
+  border-radius: 62px;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  height: 176px;
+  display: flex;
+  position: relative;
+}
+
+.button-image-arrow {
+  width: auto;
+  height: 71px;
+}
+
+.button-image-butterfly {
+  width: auto;
+  max-width: none;
+  height: 128px;
+  position: absolute;
+  bottom: 110px;
+  right: -65px;
+}
+
+.button-end {
+  background: #ffffff4d;
+  border: 1px solid #000;
+  border-radius: 62px;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  display: flex;
+}
+
+.button-end a {
+  color: #000;
+  text-align: center;
+  font-family: Teachers;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.papillon-end {
+  height: 100px;
+  position: absolute;
+  bottom: -72%;
+  right: 24%;
+}
+
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.story-sequence {
+  max-width: 750px;
+  margin-inline: auto;
+  padding-bottom: 300px;
+}
+
+.images-group {
+  position: relative;
+}
+
+.images-group-over {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.images-group-over-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-butterfly {
+  transform: translateX(-350px)translateY(-250px)scale(.5);
+}
+
+.image-temple {
+  transform: translateX(200px)translateY(100px)scale(.8);
+}
+
+.image-graveyard {
+  transform: translateX(-100px)translateY(10px)scale(1);
+}
+
+.image-man {
+  transform: translateX(200px)translateY(10px)scale(1);
+}
+
+p {
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.text-question {
+  text-align: right;
+  padding-top: 200px;
+}
+
+.image-man-back {
+  transform: translateX(0)translateY(50px)scale(1);
+}
+
+.image-man-ground {
+  z-index: 2;
+  transform: translateX(-100px)translateY(100px)scale(1);
+}
+
+.image-hands {
+  transform: translateX(50px)translateY(150px)scale(1);
+}
+
+.text-sequence {
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.scroll-mask {
+  width: 99svw;
+  height: 100vh;
+  position: relative;
+}
+
+.scroll-wrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+  left: -250px;
+  overflow: hidden;
+}
+
+.scroll-horizontal {
+  max-width: none;
+  height: 100vh;
+  display: block;
+  position: absolute;
+}
+
+.card-end {
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.image-end {
+  height: 450px;
+  margin: auto;
+}
+
+.card-text-end {
+  text-align: center;
+  padding-left: 247px;
+  padding-right: 247px;
+  font-size: 50px;
+}
+
+.scroll-horizontal-end {
+  height: 100vh;
+}
+
+footer {
+  position: relative;
+}
+
+.packshot {
+  background-image: url("../img/arbre-end-1.5c6bef9a.png"), url("../img/arbre-end-2.b9c6e197.png");
+  background-position: 0 100%, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 25%, 35%;
+  flex-flow: row;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 400px 100px 100px;
+  display: flex;
+}
+
+.info-end {
+  flex-flow: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.mockup-livre {
+  height: 100%;
+}
+
+.text-end {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=index.34df27b5.css.map */

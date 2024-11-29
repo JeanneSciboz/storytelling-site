@@ -22,11 +22,37 @@ h1 {
   padding-bottom: 100px;
 }
 
-.under-title {
+h1 .under-title {
   display: block;
   position: absolute;
   top: 100px;
   right: -100px;
+}
+
+h2 {
+  font-family: Fleur;
+  font-size: 150px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+h2 .under-title {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: -100px;
+}
+
+h3 {
+  color: #000;
+  text-align: center;
+  font-family: Teachers;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 main {
