@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+//Fonction pour faire venir les images de gauche au centre avec un opacité.
 gsap.registerPlugin(ScrollTrigger);
 
 function appearLeft(element) {
@@ -16,14 +17,15 @@ function appearLeft(element) {
   });
 }
 
+//dessou les images qui arrivent de la gauche.
 appearLeft(".image-butterfly");
 appearLeft(".image-tree");
 appearLeft(".image-graveyard");
 appearLeft(".images-man-ground");
 appearLeft(".image-graveyard-man");
-appearLeft("image-ground-hand");
+appearLeft(".image-ground-hand");
 
-// répéter pour toutes les images
+//Fonction pour faire venir les images de la droite au centre avec un opacité.
 
 function appearRight(element) {
   gsap.from(element, {
@@ -38,16 +40,20 @@ function appearRight(element) {
   });
 }
 
+//dessou les images qui arrivent de la droite.
 appearRight(".image-sky");
 appearRight(".image-temple");
 appearRight(".image-forest");
 appearRight(".images-man-ground");
 appearRight(".image-backgroud-wind");
-appearRight(".image-hand");
+appearRight(".image-hands");
+appearRight(".image-man");
+
+//Fonction pour ajouter un paralaxe sur les images.
 
 function paralax(element) {
   gsap.to(element, {
-    yPercent: 60,
+    yPercent: 20,
     scrollTrigger: {
       trigger: ".container",
       scrub: 1,
@@ -57,6 +63,9 @@ function paralax(element) {
 
 paralax(".image-butterfly");
 paralax(".image-graveyard");
+paralax(".image-temple");
+paralax(".image-man");
+paralax(".image-hands");
 // répéter pour toutes les images
 
 // gsap.to(".scroll-wrapper", {

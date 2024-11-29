@@ -13,6 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .images-group-over-2 {
@@ -25,15 +26,15 @@
   transform: translateX(-350px) translateY(-250) scale(50%);
 }
 
-.images-temple {
+.image-temple {
   transform: translateX(200px) translateY(100px) scale(80%);
 }
 
-.images-graveyard {
+.image-graveyard {
   transform: translateX(-100px) translateY(10px) scale(100%);
 }
 
-.images-man {
+.image-man {
   transform: translateX(200px) translateY(10px) scale(100%);
 }
 
@@ -47,14 +48,14 @@ p {
   padding-top: 148;
 }
 
-.images-man-back {
+.image-man-back {
   transform: translateX(0px) translateY(50px) scale(100%);
 }
 
-.images-man-ground {
+.image-man-ground {
   transform: translateX(-100px) translateY(100px) scale(100%);
 }
 
-.images-hands {
+.image-hands {
   transform: translateX(50px) translateY(150px) scale(100%);
 }
