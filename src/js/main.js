@@ -103,7 +103,8 @@ scrollMask.addEventListener("wheel", (e) => {
   const scrollAmount = e.deltaY; // Utilise le défilement vertical pour le transformer en horizontal
   scrollMask.scrollLeft += scrollAmount; // Déplace horizontalement
 });
-//teste
+
+//Fonction pour faire apparetre les textes de opacité 0 à 100%
 gsap.registerPlugin(ScrollTrigger);
 
 // Sélectionne tous les éléments ayant la classe "texte-animate"
@@ -112,9 +113,10 @@ const textes = document.querySelectorAll(".texte-animate");
 textes.forEach((texte) => {
   gsap.fromTo(
     texte,
-    { opacity: 0 }, // Départ invisible
+    { opacity: 0, scale: 0.9 }, // Départ invisible
     {
       opacity: 1, // Fin visible
+      scale: 1,
       duration: 3, // Durée de l'animation
       scrollTrigger: {
         trigger: texte, // Déclencheur propre à chaque texte
