@@ -139,7 +139,7 @@
 
 .scroll-mask {
   width: 100%; /* Largeur visible */
-  height: 200px; /* Hauteur visible (ajustez selon vos besoins) */
+  height: 100vh; /* Hauteur visible (ajustez selon vos besoins) */
   overflow: hidden; /* Masque les parties débordantes */
   position: relative;
 }

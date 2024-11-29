@@ -10,6 +10,7 @@ function appearLeft(element) {
       trigger: element,
       start: "center 85%",
       end: "center 15%",
+      toggleActions: "play none none reverse",
     },
     x: -500,
     duration: 1,
@@ -24,6 +25,8 @@ appearLeft(".image-graveyard");
 appearLeft(".images-man-ground");
 appearLeft(".image-graveyard-man");
 appearLeft(".image-ground-hand");
+appearLeft(".images-man-back");
+appearLeft(".images-man-ground");
 
 //Fonction pour faire venir les images de la droite au centre avec un opacité.
 
@@ -33,6 +36,7 @@ function appearRight(element) {
       trigger: element,
       start: "center 85%",
       end: "center 15%",
+      toggleActions: "play none none reverse",
     },
     x: 500,
     duration: 1,
@@ -53,7 +57,7 @@ appearRight(".image-man");
 
 function paralax(element) {
   gsap.to(element, {
-    yPercent: 20,
+    yPercent: 15,
     scrollTrigger: {
       trigger: ".container",
       scrub: 1,
@@ -98,4 +102,26 @@ scrollMask.addEventListener("wheel", (e) => {
   // Calcule le défilement horizontal
   const scrollAmount = e.deltaY; // Utilise le défilement vertical pour le transformer en horizontal
   scrollMask.scrollLeft += scrollAmount; // Déplace horizontalement
+});
+//teste
+gsap.registerPlugin(ScrollTrigger);
+
+// Sélectionne tous les éléments ayant la classe "texte-animate"
+const textes = document.querySelectorAll(".texte-animate");
+
+textes.forEach((texte) => {
+  gsap.fromTo(
+    texte,
+    { opacity: 0 }, // Départ invisible
+    {
+      opacity: 1, // Fin visible
+      duration: 3, // Durée de l'animation
+      scrollTrigger: {
+        trigger: texte, // Déclencheur propre à chaque texte
+        start: "top 80%", // Commence à 80% de la hauteur de la fenêtre
+        end: "top 30%", // Se termine à 30%
+        scrub: true, // Synchronise avec le scroll
+      },
+    }
+  );
 });
